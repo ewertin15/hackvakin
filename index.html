@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hack Avakoins</title>
+    <style>
+        /* Fonte Hacker */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Fundo estilo hacker */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://i.pinimg.com/736x/f0/ac/b9/f0acb9f00a38872b751b62305197f348.jpg') no-repeat center center/cover;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Container do login */
+        .login-container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+            text-align: center;
+            width: 350px;
+            position: relative;
+        }
+
+        /* Efeito glitch na logo */
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 5px #00ff00);
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-2px); }
+            40% { transform: translateX(2px); }
+            60% { transform: translateX(-2px); }
+            80% { transform: translateX(2px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Inputs estilizados */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            background: black;
+            color: #00ff00;
+            font-size: 14px;
+            text-align: center;
+            outline: none;
+        }
+
+        /* Efeito neon no input */
+        input:focus {
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Botão estilo hacker */
+        button {
+            width: 100%;
+            padding: 12px;
+            background: black;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        /* Animação de brilho no botão */
+        button:hover {
+            background: #00ff00;
+            color: black;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: 10px;
+            font-size: 10px;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDzqHJsKaTkc00X21XdAndHGdQxj1ZU7nHg&s" alt="Hack Avakoins" class="logo">
+
+        <h2>Hack Avakoins</h2> Sua conta Avakin-life
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Acessar</button>
+        </form>
+        <div class="footer">© 2025 Hack Avakoins - Acesso VIP</div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            alert(`Acesso liberado para: ${email}`);
+        });
+    </script>
+
+</body>
+
+<script>
+    window.onload = function() {
+    alert("Bem-vindo ao Hack Avakoins! Use seus dados do Avakin-life, para que os avakoins chegue na conta correta! Usar o hack uma vez ao dia, pra não bugar o sistema. Boa diversão.");
+    };
+</script>
+
+</html>
